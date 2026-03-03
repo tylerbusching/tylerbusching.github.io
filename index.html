@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio, projects, and resume." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Your Name</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Engineering Technology • Visual Arts</p>
+          <h1>Minimal, clean portfolio — projects, media, and resume.</h1>
+          <p class="lead">
+            Short 1–2 sentence intro about what you build (digital logic, circuits, Arduino, design/woodwork, etc.).
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">View Work</a>
+            <a class="btn btn-ghost" href="#resume">Download Resume</a>
+          </div>
+
+          <div class="hero-links">
+            <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <span aria-hidden="true">•</span>
+            <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span aria-hidden="true">•</span>
+            <a href="#" target="_blank" rel="noreferrer">Email</a>
+          </div>
+        </div>
+
+        <div class="hero-card" role="img" aria-label="Profile image placeholder">
+          <div class="avatar" aria-hidden="true"></div>
+          <div class="hero-card-text">
+            <p class="hero-card-title">Your Name</p>
+            <p class="muted">Bay Shore, NY • Open to internships</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Selected Work</h2>
+          <p class="muted">A mix of engineering + creative projects. Replace these cards with your real stuff.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>FPGA / Digital Logic Project</h3>
+              <p class="muted">1–2 lines describing what it does and what tools you used (VHDL, Nexys, etc.).</p>
+              <div class="tags">
+                <span class="tag">VHDL</span>
+                <span class="tag">FPGA</span>
+                <span class="tag">Digital</span>
+              </div>
+              <div class="card-links">
+                <a href="#" target="_blank" rel="noreferrer">Read</a>
+                <a href="#" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Arduino Sensor Build</h3>
+              <p class="muted">Short description (sensors, LCD UI, buzzer alerts, etc.).</p>
+              <div class="tags">
+                <span class="tag">Arduino</span>
+                <span class="tag">Embedded</span>
+                <span class="tag">C++</span>
+              </div>
+              <div class="card-links">
+                <a href="#" target="_blank" rel="noreferrer">Read</a>
+                <a href="#" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Wood / Sculpture Piece</h3>
+              <p class="muted">Materials + concept in one or two lines.</p>
+              <div class="tags">
+                <span class="tag">Wood</span>
+                <span class="tag">Design</span>
+                <span class="tag">Process</span>
+              </div>
+              <div class="card-links">
+                <a href="#" target="_blank" rel="noreferrer">Gallery</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>PC Build / Technical Write-up</h3>
+              <p class="muted">Performance goals, parts list, benchmarks, and lessons learned.</p>
+              <div class="tags">
+                <span class="tag">Hardware</span>
+                <span class="tag">Performance</span>
+                <span class="tag">Build</span>
+              </div>
+              <div class="card-links">
+                <a href="#" target="_blank" rel="noreferrer">Read</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Resume</h2>
+          <p class="muted">
+            Upload your PDF to <code>assets/files/Your_Resume.pdf</code> and update the link below.
+          </p>
+        </div>
+
+        <div class="resume-box">
+          <div>
+            <h3 class="resume-title">Your Resume (PDF)</h3>
+            <p class="muted">One-click download + quick view.</p>
+          </div>
+          <div class="resume-actions">
+            <a class="btn btn-primary" href="assets/files/Your_Resume.pdf" download>Download</a>
+            <a class="btn btn-ghost" href="assets/files/Your_Resume.pdf" target="_blank" rel="noreferrer">Open</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">A short bio + what you’re focusing on right now.</p>
+        </div>
+
+        <div class="two-col">
+          <div class="panel">
+            <h3>Bio</h3>
+            <p>
+              Write a tight paragraph: what you study, what you like building, what roles you’re aiming for.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Skills</h3>
+            <ul class="list">
+              <li>Circuit analysis, lab work, troubleshooting</li>
+              <li>Digital logic (VHDL), FPGA basics</li>
+              <li>Embedded/Arduino projects</li>
+              <li>CAD / shop tools / creative fabrication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Keep it simple. Email + links is enough to start.</p>
+        </div>
+
+        <div class="contact-box">
+          <a class="btn btn-primary" href="mailto:youremail@example.com">Email Me</a>
+          <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <p class="footer muted">© <span id="year"></span> Your Name</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
