@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tyler Busching | My Work</title>
+  <meta name="description" content="Explore Tyler Busching's technical projects and creative work.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Tyler Busching</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="my-work.html">My Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- =====================================================
+         PAGE INTRO
+         ===================================================== -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">My Work</p>
+        <h1 class="page-title">Projects and creative work, kept separate but connected.</h1>
+        <p class="lead">
+          This page is split into two areas. The Projects section highlights technical and engineering work.
+          The Creative Work section holds artwork, design pieces, and photos for personal and visual exploration.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container work-split">
+        <!-- =================================================
+             PROJECTS SECTION
+             Only preview two projects here.
+             The button below leads to a full projects page.
+             ================================================= -->
+        <div>
+          <div class="section-topbar">
+            <div class="section-heading">
+              <h2>Projects</h2>
+              <p class="muted">
+                Technical, engineering, and school-related work such as circuits, digital logic, embedded builds,
+                and hardware-focused projects.
+              </p>
+            </div>
+            <a class="btn" href="all-projects.html">View all projects</a>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <div class="card-media"></div>
+              <div class="card-body">
+                <h3>24hr Digital Clock Design</h3>
+                <p class="muted">
+                  Designed and implemented a 24hr digital clock circuit using counters, decoders, switches,
+                  LEDs, and seven-segment displays.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Digital Logic</span>
+                  <span class="tag">NI Multisim</span>
+                  <span class="tag">Circuit Design</span>
+                </div>
+                <a class="card-link" href="projects/digital-clock.html">Open project page →</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media"></div>
+              <div class="card-body">
+                <h3>Temperature, Humidity, and Gas Sensor Display</h3>
+                <p class="muted">
+                  Arduino-based monitoring system that displays live environmental values and triggers an alarm
+                  when sensor readings change sharply.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Arduino</span>
+                  <span class="tag">Embedded C++</span>
+                  <span class="tag">Sensors</span>
+                </div>
+                <a class="card-link" href="projects/sensor-display.html">Open project page →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- =================================================
+             CREATIVE WORK SECTION
+             Only preview two items here.
+             The button below leads to a full creative work page.
+             ================================================= -->
+        <div>
+          <div class="section-topbar">
+            <div class="section-heading">
+              <h2>Creative Work</h2>
+              <p class="muted">
+                Drawings, paintings, design studies, and photography. This section is separate from technical
+                projects but still part of the full portfolio.
+              </p>
+            </div>
+            <a class="btn" href="all-creative-work.html">View all creative work</a>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <div class="card-media"></div>
+              <div class="card-body">
+                <h3>Physical Creative Media</h3>
+                <p class="muted">
+                  A collection of drawings, paintings, photos, and mixed-media projects that I have created.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Oil Paint</span>
+                  <span class="tag">Graphite</span>
+                  <span class="tag">Mixed Media</span>
+                </div>
+                <a class="card-link" href="creative/creative-template.html">Open creative page →</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media"></div>
+              <div class="card-body">
+                <h3>Photography Collection</h3>
+                <p class="muted">
+                  A preview section for interesting photos that I've taken when travelling or adventuring.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Photos</span>
+                  <span class="tag">Visual</span>
+                  <span class="tag">Collection</span>
+                </div>
+                <a class="card-link" href="creative/creative-template.html">Open creative page →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Tyler Busching</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="all-projects.html">All Projects</a>
+        <a href="all-creative-work.html">All Creative Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
