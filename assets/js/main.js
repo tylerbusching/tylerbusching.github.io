@@ -1,22 +1,35 @@
-// Mobile nav toggle
-const toggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector("#site-nav");
+/* =========================================================
+   TYLER BUSCHING PORTFOLIO - MAIN JAVASCRIPT
+   ---------------------------------------------------------
+   This file is intentionally simple.
+   1. Mobile menu toggle
+   2. Footer year
+   ========================================================= */
 
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", String(isOpen));
+// ---------- MOBILE NAVIGATION ----------
+const navToggle = document.querySelector('.nav-toggle');
+const siteNav = document.querySelector('#site-nav');
+
+if (navToggle && siteNav) {
+  navToggle.addEventListener('click', function () {
+    const isOpen = siteNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
   });
 
-  // Close nav when a link is clicked (mobile)
-  nav.querySelectorAll("a").forEach((a) => {
-    a.addEventListener("click", () => {
-      nav.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
+  // Close the mobile menu after clicking a link
+  const navLinks = siteNav.querySelectorAll('a');
+
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      siteNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
     });
   });
 }
 
-// Footer year
-const yearEl = document.querySelector("#year");
-if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+// ---------- FOOTER YEAR ----------
+const yearElements = document.querySelectorAll('[data-year]');
+
+yearElements.forEach(function (element) {
+  element.textContent = new Date().getFullYear();
+});
