@@ -1,22 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tyler Busching — Portfolio</title>
-  <meta name="description" content="Tyler Busching - Computer Engineering Technology student. Engineering projects, creative portfolio, and resume." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tyler Busching | Home</title>
+  <meta name="description" content="Tyler Busching portfolio website featuring engineering projects, creative work, resume, and contact information.">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="assets/js/main.js"></script>
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- =====================================================
+       SITE HEADER / NAVIGATION
+       Edit nav links here if pages are renamed.
+       ===================================================== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">
+      <a class="brand" href="index.html">
         <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">Tyler Busching</span>
+        <span>Tyler Busching</span>
       </a>
 
       <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
@@ -24,193 +27,144 @@
         <span class="hamburger" aria-hidden="true"></span>
       </button>
 
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#resume">Resume</a>
-        <a href="#about">About</a>
-        <a class="nav-cta" href="#contact">Contact</a>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="my-work.html">My Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
+    <!-- =====================================================
+         HOME PAGE HERO
+         Edit the intro text, buttons, and links here.
+         ===================================================== -->
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Computer Engineering Technology • Creative design</p>
-          <h1>Engineering projects & creative porfolio</h1>
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Computer Engineering Technology • Creative Design</p>
+          <h1 class="page-title">Engineering projects, creative work, and a growing portfolio.</h1>
           <p class="lead">
-            I like working with hardware and electronics as well as creating all kinds of different artwork. Here's some of what I've created:
+            I'm Tyler Busching, a Computer Engineering Technology student at Farmingdale State College.
+            This site is a home for my technical projects, creative work, resume, and background.
           </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#work">View Work</a>
-            <a class="btn btn-ghost" href="#resume">Download Resume</a>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="my-work.html">Explore My Work</a>
+            <a class="btn" href="resume.html">View Resume</a>
           </div>
 
-          <div class="hero-links">
+          <div class="social-links">
             <a href="https://github.com/tylerbusching" target="_blank" rel="noreferrer">GitHub</a>
-            <span aria-hidden="true">•</span>
             <a href="https://www.linkedin.com/in/tylerbusching/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <span aria-hidden="true">•</span>
-            <a href="mailto:tylerbusching0@gmail.com" rel="noreferrer">Email</a>
+            <a href="mailto:tylerbusching0@example.com">Email</a>
           </div>
         </div>
 
-        <div class="hero-card" role="img" aria-label="Profile image placeholder">
-          <div class="avatar" aria-hidden="true"></div>
-          <div class="hero-card-text">
-            <p class="hero-card-title">Tyler Busching</p>
-            <p class="muted">Long Island, NY • Open to internships and work experience</p>
-          </div>
-        </div>
+        <aside class="hero-card">
+          <div class="hero-visual"></div>
+          <h2>Current Focus</h2>
+          <p class="muted">
+            Digital logic, hardware, embedded systems, technical problem-solving, and creative design work.
+          </p>
+          <p class="muted">Long Island, NY • Open to internships and work experience</p>
+        </aside>
       </div>
     </section>
 
-    <section id="work" class="section">
+    <!-- =====================================================
+         HOME PAGE PREVIEW CARDS
+         These are previews only. Each card links to a full page.
+         ===================================================== -->
+    <section class="section section-soft">
       <div class="container">
-        <div class="section-head">
-          <h2>Selected Work</h2>
-          <p class="muted">A showcase of various projects and creative endeavors.</p>
+        <div class="section-heading">
+          <h2>A Quick Look</h2>
+          <p class="muted">Browse this homepage for a preview into the main sections of my website.</p>
         </div>
 
         <div class="grid">
           <article class="card">
-            <div class="thumb" aria-hidden="true"></div>
+            <div class="card-media"></div>
             <div class="card-body">
-              <h3>24hr Digital Clock Design</h3>
-              <p class="muted">Designed and implemented a 24hr digital clock circuit using cascaded counters, decoders, switches, LEDS, and seven-segment displays.</p>
-              <div class="tags">
-                <span class="tag">Digital logic</span>
-                <span class="tag">NI Multisim</span>
-              </div>
-              <div class="card-links">
-                <a href="#" target="_blank" rel="noreferrer">Read</a>
-                <a href="#" target="_blank" rel="noreferrer">Code</a>
-              </div>
+              <h3>My Work</h3>
+              <p class="muted">Browse my engineering projects and creative work.</p>
+              <a class="card-link" href="my-work.html">Go to My Work →</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="thumb" aria-hidden="true"></div>
+            <div class="card-media"></div>
             <div class="card-body">
-              <h3>Temperature, Humiditiy, and Gas Sensor Display with Warning Alarm</h3>
-              <p class="muted">Arduino-based circuit that displays realtime temperature in Celsius/Fahrenheit, humidity, and a gas level with an audible alarm that triggers when the gas sensor detects sudden changes.</p>
-              <div class="tags">
-                <span class="tag">Arduino</span>
-                <span class="tag">Embedded</span>
-                <span class="tag">C++</span>
-              </div>
-              <div class="card-links">
-                <a href="#" target="_blank" rel="noreferrer">Read</a>
-                <a href="#" target="_blank" rel="noreferrer">Code</a>
-              </div>
+              <h3>Resume</h3>
+              <p class="muted">View and download my resume from a dedicated page.</p>
+              <a class="card-link" href="resume.html">Go to Resume →</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="thumb" aria-hidden="true"></div>
+            <div class="card-media"></div>
             <div class="card-body">
-              <h3>Physical Creative Media</h3>
-              <p class="muted">My drawings, paintings, and creative artwork projects.</p>
-              <div class="tags">
-                <span class="tag">Graphite/Oil Pencil</span>
-                <span class="tag">Oil Paint, Acrylic, Watercolor</span>
-                <span class="tag">Canvas, Paper, Skateboards</span>
-              </div>
-              <div class="card-links">
-                <a href="#" target="_blank" rel="noreferrer">Gallery</a>
-              </div>
+              <h3>About</h3>
+              <p class="muted">About me, my skills, my background, and ambitions.</p>
+              <a class="card-link" href="about.html">Go to About →</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="thumb" aria-hidden="true"></div>
+            <div class="card-media"></div>
             <div class="card-body">
-              <h3>PC Builds / Technical Write-ups</h3>
-              <p class="muted">PC Building process, setup, optimization.</p>
-              <div class="tags">
-                <span class="tag">Hardware</span>
-                <span class="tag">Performance</span>
-                <span class="tag">Optimization</span>
-              </div>
-              <div class="card-links">
-                <a href="#" target="_blank" rel="noreferrer">Read</a>
-              </div>
+              <h3>Contact</h3>
+              <p class="muted">My email and social contact information.</p>
+              <a class="card-link" href="contact.html">Go to Contact →</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="resume" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Resume</h2>
+    <!-- =====================================================
+         HOME PAGE FEATURED ITEMS
+         Replace these with your strongest examples later.
+         ===================================================== -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="section-panel">
+          <h2>Featured Technical Project</h2>
           <p class="muted">
-            Upload your PDF to <code>assets/files/Your_Resume.pdf</code> and update the link below.
+            Start by showing one strong engineering project here, such as your 24hr digital clock design,
+            an FPGA project, or an Arduino system.
           </p>
+          <a class="btn" href="projects/digital-clock.html">View Example Project</a>
         </div>
 
-        <div class="resume-box">
-          <div>
-            <h3 class="resume-title">Your Resume (PDF)</h3>
-            <p class="muted">One-click download + quick view.</p>
-          </div>
-          <div class="resume-actions">
-            <a class="btn btn-primary" href="assets/files/Your_Resume.pdf" download>Download</a>
-            <a class="btn btn-ghost" href="assets/files/Your_Resume.pdf" target="_blank" rel="noreferrer">Open</a>
-          </div>
+        <div class="section-panel">
+          <h2>Featured Creative Work</h2>
+          <p class="muted">
+            You can feature a selected painting, drawing, design study, or physical creative piece here.
+          </p>
+          <a class="btn" href="creative/creative-template.html">View Example Creative Page</a>
         </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>About</h2>
-          <p class="muted">I'm a full-time engineering student and work part-time on the weekends.</p>
-        </div>
-
-        <div class="two-col">
-          <div class="panel">
-            <h3>Bio</h3>
-            <p>
-              I am studying Computer Engineering Technology at Farmingdale State College in New York and currently work part-time in food catering on the weekends. I'm looking to attain formal work experience in the engineering industry where I can grow my skillsets and make new connections. 
-              I've always been technically-inclined since childhood and aim to never stop learning about technology and trying to keep up with its unpredictable nature. I also like to express my creativity in various ways whether it be technical design or oil paint on a canvas.
-            </p>
-          </div>
-
-          <div class="panel">
-            <h3>Skills</h3>
-            <ul class="list">
-              <li>Circuit analysis, lab work, troubleshooting</li>
-              <li>Digital logic & design, FPGA design (VHDL)</li>
-              <li>Embedded/Arduino/Microcontroller projects</li>
-              <li>Simulation software, Vivado, Office 365, Adobe Suite</li>
-              <li>PC Hardware assembly, troubleshooting, optimization</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p class="muted">Contact me or view my social media:</p>
-        </div>
-
-        <div class="contact-box">
-          <a class="btn btn-primary" href="mailto:youremail@example.com">Email Me</a>
-          <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-
-        <p class="footer muted">© <span id="year"></span> Your Name</p>
       </div>
     </section>
   </main>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Tyler Busching</p>
+      <div class="footer-links">
+        <a href="my-work.html">My Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
