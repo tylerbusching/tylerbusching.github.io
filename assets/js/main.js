@@ -33,3 +33,31 @@ const yearElements = document.querySelectorAll('[data-year]');
 yearElements.forEach(function (element) {
   element.textContent = new Date().getFullYear();
 });
+
+// --------- CAROUSEL -------------
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const track = carousel.querySelector('.carousel-track');
+  const images = track.querySelectorAll('img');
+  const dotsContainer = carousel.querySelector('.carousel-dots');
+  let current = 0;
+
+  // Build dots
+  images.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(index) {
+    current = (index + images.length) % images.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    carousel.querySelectorAll('.dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  carousel.querySelector('.carousel-prev').addEventListener('click', () => goTo(current - 1));
+  carousel.querySelector('.carousel-next').addEventListener('click', () => goTo(current + 1));
+});
