@@ -48,7 +48,20 @@
     <section class="section section-soft">
       <div class="container detail-grid">
         <div>
-          <div class="detail-image"></div>
+          <div class="detail-image">
+            <div class="carousel">
+              <div class="carousel-track">
+                <img src="assets/images/projects/Digital Clock Simulation Schematic.png" alt="Digital clock - simulation schematic">
+                <img src="assets/images/projects/Digital Clock Time Example.png" alt="Digital clock - live time example">
+                <img src="assets/images/projects/Seconds Block.png" alt="Digital clock - seconds block">
+                <img src="assets/images/projects/Minutes Block.png" alt="Digital clock - minutes block">
+                <img src="assets/images/projects/Hours Block.png" alt="Digital clock - hours block">
+              </div>
+              <button class="carousel-btn carousel-prev" aria-label="Previous image">&#8592;</button>
+              <button class="carousel-btn carousel-next" aria-label="Next image">&#8594;</button>
+              <div class="carousel-dots"></div>
+            </div>
+          </div>
         </div>
 
         <aside class="detail-panel">
@@ -76,8 +89,12 @@
         <div class="detail-panel">
           <h2>What to Write Here</h2>
           <p>
-            Use this area to explain the design goal, how the circuit works, what challenges came up,
-            and what you learned from the process.
+            This circuit schematic displays a 24hr digital clock on seven segment displays which shows seconds,
+            minutes, and hours. There is an LED Probe which indicates AM or PM hours. One of the biggest challenges
+            when designing this schematic was solving how to cascade the counters in order to properly translate
+            seconds over to minutes, and minutes over to hours. The logic gates at the bottom of the schematic
+            allow for the clock to reset itself every 12 hours. In addition, there are two switches at the bottom
+            so that the user can manually test the minute and hour block without having to wait in real-time.
           </p>
         </div>
       </div>
